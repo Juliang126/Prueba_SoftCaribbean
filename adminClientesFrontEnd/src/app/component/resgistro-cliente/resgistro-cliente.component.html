@@ -1,0 +1,32 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h1>Resgistrar Cliente</h1>
+        </div>
+        <div class="card-body">
+            <form action>
+                <div class="form-group">
+                  <label for="">Número deIdentificación:</label>
+                  <input [(ngModel)]="cliente.numeroIdentificacion" type="number" class="form-control" name="numeroIdentificacion">
+                </div>
+                <div class="form-group">
+                  <label for="">Nombre:</label>
+                  <input [(ngModel)]="cliente.nombre" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="">Apellidos:</label>
+                  <input [(ngModel)]="cliente.apellidos" type="text" class="form-control" name="apellidos">
+                </div>
+                <div class="form-group">
+                  <label for="">Número Celular:</label>
+                  <input [(ngModel)]="cliente.numeroCelular" type="number" class="form-control" name="numeroCelular">
+                </div>
+                <div class="form-group">
+                  <label for="">Correo Electronico</label>
+                  <input [(ngModel)]="cliente.correoElectronico" type="text" class="form-control" name="correoElectronico">
+                </div>
+                <button (click)="registrarCliente(cliente);" class="btn btn-primary">Registrar</button>
+              </form>
+        </div>
+    </div>
+</div>
